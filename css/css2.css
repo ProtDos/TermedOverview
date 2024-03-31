@@ -1,0 +1,52 @@
+.go4109123758 {
+    z-index: 9999;
+}
+
+.go2072408551 {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    color: #363636;
+    line-height: 1.3;
+    will-change: transform;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.05);
+    max-width: 350px;
+    pointer-events: auto;
+    padding: 8px 10px;
+    border-radius: 8px;
+
+    animation: fade-animation 0.35s cubic-bezier(0.21, 1.02, 0.73, 1) 0s 1 normal forwards;
+    opacity: 0;
+}
+
+.go685806154 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+@keyframes fade-animation {
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    opacity: 1 !important;
+    transition: opacity 0.5s ease-in-out !important;
+}
+
+.fade-out {
+    opacity: 0 !important;
+}
